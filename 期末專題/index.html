@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple RPG</title>
+    <style>
+      body {
+        background-image: url(images/background2.jpg);
+        background-size: cover;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="move-right">
+      <h1 >闖關得到菊花寶典</h1>
+      <h2 >經過特殊的圖案充滿經驗值，並得到寶典，即通過闖關！</h2>
+      <!--畫布-->
+      <canvas id="myCanvas" width="800" height="800"></canvas>
+    </div>
+
+    <div class="showlevel">
+      <label for="level">經驗值：</label>
+      <!--經驗條-->
+      <meter id="level" min="0" max="5" value="0"></meter>
+    </div>
+
+    <div class="container">
+      <!--題號-->
+      <p id="talkBox"></p>
+      <!--題目-->
+      <p id="talkBox1"></p>
+      <!--題目圖片-->
+      <img src="images/image1.png" id="image1" width="360px" height="270px">
+      <!--選項-->
+      <input type="radio" id="a" name="radio" value="radioa">
+      <label id="radio1" ></label>&emsp;&emsp;&emsp;
+      <input type="radio" id="b" name="radio" value="radiob">
+      <label id="radio2" ></label>&emsp;&emsp;&emsp;
+      <input type="radio" id="c" name="radio" value="radioc">
+      <label id="radio3" ></label>&emsp;&emsp;&emsp;
+      <input type="radio" id="d" name="radio" value="radiod">
+      <label id="radio4" ></label>&emsp;&emsp;&emsp;
+    </div>    
+    
+    <script src="//unpkg.com/jquery"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
